@@ -34,21 +34,6 @@ from torch.optim.lr_scheduler import ExponentialLR, ReduceLROnPlateau, CosineAnn
 
 import wandb
 
-class TensorDataset(Dataset):
-    def __init__(self, embedding_folder="embedding_folder", padding_mask_folder="padding_mask_folder"):
-        self.embedding_folder = embedding_folder
-        self.padding_mask_folder = padding_mask_folder
-        self.file_indices = [int(f.split('_')[1].split('.')[0]) for f in os.listdir(embedding_folder) if f.startswith('embedding_')]
-
-    def __len__(self):
-        return len(self.file_indices)
-
-    def __getitem__(self, idx):
-        file_idx = self.file_indices[idx]
-        embedding = torch.load(os.path.join(self.embedding_folder, f"embedding_{file_idx}.pt"))
-        padding_mask = torch.load(os.path.join(self.padding_mask_folder, f"padding_mask_{file_idx}.pt"))
-        
-        return embedding, padding_mask
 
 # constants
 
@@ -611,4 +596,27 @@ class Denoise_Transformer(nn.Module):
 
 
 
+####################################################################
+#                   Init Model and Diffusion Example               #
+####################################################################
 
+# # Load the pretrained ESM2 model
+# esm2, alphabet = esm.pretrained.esm2_t6_8M_UR50D()
+# esm2.eval()
+
+# # Create an instance of Denoise_Transformer with the layers of ESM2
+# model = Denoise_Transformer(esm_layers = esm2.layers, embed_dim = embed_dim)
+
+# model = torch.nn.DataParallel(model)
+# model.to(device)
+
+# diffusion = GaussianDiffusion1D(
+#     model,
+#     seq_length = pep_max_len + 2,
+#     timesteps = 1000,
+#     objective = 'pred_x0',
+#     loss_type= loss_type,
+#     auto_normalize = auto_normalize,
+#     embed_dim = embed_dim,
+#     device = device
+# ).to(device)
