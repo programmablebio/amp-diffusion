@@ -28,3 +28,4 @@ If you find this work useful in your research, please consider citing:
 
 
 ## License
+This project is licensed under the MIT License.
