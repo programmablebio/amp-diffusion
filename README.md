@@ -1,6 +1,6 @@
 # AMP-Diffusion
 
-[Preprint Link](https://www.biorxiv.org/content/10.1101/2024.03.03.583201v1) | [GenBio Link](https://openreview.net/forum?id=145TM9VQhx)
+[Cell Biomaterial Link](https://www.cell.com/cell-biomaterials/fulltext/S3050-5623(25)00174-6) | [Preprint Link](https://www.biorxiv.org/content/10.1101/2024.03.03.583201v1) | [GenBio Link](https://openreview.net/forum?id=145TM9VQhx)
 
 ## Abstract
 
@@ -10,6 +10,17 @@ Denoising Diffusion Probabilistic Models (DDPMs) have emerged as a potent class 
 ## Citation
 
 If you find this work useful in your research, please consider citing:
+```bibtex
+@article{torres2025generative,
+  title={Generative latent diffusion language modeling yields anti-infective synthetic peptides},
+  author={Torres, Marcelo DT and Chen, Leo Tianlai and Wan, Fangping and Chatterjee, Pranam and de la Fuente-Nunez, Cesar},
+  journal={Cell Biomaterials},
+  volume={1},
+  number={9},
+  year={2025},
+  publisher={Elsevier}
+}
+```
 
 ```bibtex
 @article{chen2024amp,
