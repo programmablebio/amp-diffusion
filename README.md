@@ -2,7 +2,10 @@
 
 [Cell Biomaterial Link](https://www.cell.com/cell-biomaterials/fulltext/S3050-5623(25)00174-6) | [Preprint Link](https://www.biorxiv.org/content/10.1101/2024.03.03.583201v1) | [GenBio Link](https://openreview.net/forum?id=145TM9VQhx)
 
-Note, this is the repo to demonstrate the model architechture of reusing ESM2 attention layers with diffusion (ampdiffusion.py), and how to evalute PPL with ProGen2 (ppl.py). One can also find some generated samples from our model and others in results folder. The project was done in early 2023, a while ago before Diffusion outbreak in Bio domain, so many of features/training techniques or modeling technicques might be outdated these days. Users might want to refer to more recent and advanced diffusion/flow matching model.
+Note: This repository demonstrates the model architecture for reusing **ESM2 attention layers with diffusion** (`ampdiffusion.py`) and illustrates how to evaluate **PPL with ProGen2** (`ppl.py`). You can also find generated samples from our model and others in the `results` folder.
+
+This project was completed in early 2023, prior to the recent surge of diffusion methods in the bio domain, so some features, training approaches, and modeling techniques may now be outdated. Users may want to refer to more recent and advanced diffusion or flow-matching models for state-of-the-art practices.
+
 
 ## Abstract
 
