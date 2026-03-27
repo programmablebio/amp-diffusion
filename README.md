@@ -4,7 +4,7 @@
 
 Note: This repository demonstrates the model architecture for reusing **ESM2 attention layers with diffusion** (`ampdiffusion.py`) and illustrates how to evaluate **PPL with ProGen2** (`ppl.py`). You can also find generated samples from our model and others in the `results` folder. Note,in the gebio workshop version, we used ESM2 for scoring, not ProGen2.
 
-**New**: We release the 16.54M parameter checkpoint and generation script with updated benchmark results in [`note/`](note/). See [`note/README.md`](note/README.md) for details.
+> 🎉 We release the 16.54M parameter checkpoint and generation script with updated benchmark results in [`note/`](note/). See [`note/README.md`](note/README.md) for details.
 
 This project was completed in early 2023, prior to the recent surge of diffusion methods in the bio domain, so some features, training approaches, and modeling techniques may now be outdated. Users may want to refer to more recent and advanced diffusion or flow-matching models for state-of-the-art practices.
 
